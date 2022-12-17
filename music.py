@@ -1,13 +1,12 @@
 import streamlit as st
 from streamlit_webrtc import webrtc_streamer
-import av
-import cv2 
+import av 
 import numpy as np 
 import mediapipe as mp 
 from keras.models import load_model
 import webbrowser
 import pandas as pd
-
+import cv2
 model  = load_model("model.h5")
 label = np.load("labels.npy")
 holistic = mp.solutions.holistic
